@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Food Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Student Food Form</h1>
+<form action="#" th:action="@{/uniform}" th:object="${student}" method="post">
+    <p>Full Name: <input type="text" th:field="*{fullName}" /></p>
+    <p>Food Type: <input type="text" th:field="*{food}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
